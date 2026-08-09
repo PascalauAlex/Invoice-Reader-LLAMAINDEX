@@ -33,3 +33,19 @@ Run the following command to install the necessary Python packages:
 
 ```bash
 pip install llama-index llama-index-llms-openai llama-index-readers-file pydantic python-dotenv
+
+
+📤 Expected Output
+
+The script will process the PDF and print a structured JSON response containing the extracted data:
+{
+  "vendor": "Acme Corp",
+  "invoice_date": "2023-10-15T00:00:00",
+  "due_date": "2023-11-15T00:00:00",
+  "invoice_number": "INV-10293",
+  "total_due": "$1,250.00",
+  "items": [
+    "Web Design Services",
+    "Hosting for 1 year"
+  ]
+}
